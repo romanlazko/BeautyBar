@@ -132,10 +132,10 @@
                             </div>
                             <div class="w-full space-y-2">
                                 <h1 class="font-['Cinzel'] font-medium text-md">
-                                    PROFESSIONAL MANICURES
+                                    PRIME LOCATION
                                 </h1>
                                 <p class="text-xs md:text-sm font-['Montserrat'] ">
-                                    Our masters bring their expertise and precision to every service, ensuring that you leave our studio with beautiful, well-crafted nails. Your satisfaction is our priority.
+                                    Our studio is situated in the heart of the city, which making it more accessible to clients.
                                 </p>
                             </div>
                         </div>
@@ -145,10 +145,10 @@
                             </div>
                             <div class="w-full space-y-2">
                                 <h1 class="font-['Cinzel'] font-medium text-md">
-                                    PROFESSIONAL MANICURES
+                                    WIDE COLOR PALETTE
                                 </h1>
                                 <p class="text-xs md:text-sm font-['Montserrat'] ">
-                                    Our masters bring their expertise and precision to every service, ensuring that you leave our studio with beautiful, well-crafted nails. Your satisfaction is our priority.
+                                    Choose from a vast spectrum of nail polish colors to match your unique style and mood.
                                 </p>
                             </div>
                         </div>
@@ -211,7 +211,6 @@
                         <div style="writing-mode: vertical-rl; text-orientation: mixed; transform: rotate(180deg); transform-origin: center;" class="hidden sm:block">
                             <h1 class="m-auto text-center uppercase border-2 bg-[#EAD7CA] rounded-full h-full px-1 sm:px-3 text-[#1E3B2B] font-['Cinzel'] text-2xl whitespace-nowrap">Nail services</h1>
                         </div>
-                        
                         <ul class="w-full space-y-10 text-[#EAD7CA] font-['Montserrat'] border-l-[1px] py-5">
                             <li class="flex items-center">
                                 <div class="rounded-full w-[10px] h-[10px] bg-red-50 transform -translate-x-[60%]">
@@ -233,8 +232,23 @@
                                 </div>
                                 <div class="flex justify-between pl-5 w-full">
                                     <div class="sm:flex space-x-40">
-                                        <h1 class="font-medium text-lg">Classic Manicure</h1>
-                                        <p class="font-extralight text-sm"></p>
+                                        <h1 class="font-medium text-lg">KombiLight</h1>
+                                        <p class="font-extralight text-sm">(manicure + gel polish)</p>
+                                    </div>
+                                    <div>
+                                        <span>
+                                            800
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="rounded-full w-[10px] h-[10px] bg-red-50 transform -translate-x-[60%]">
+                                </div>
+                                <div class="flex justify-between pl-5 w-full">
+                                    <div class="sm:flex space-x-40">
+                                        <h1 class="font-medium text-lg">KombiHard</h1>
+                                        <p class="font-extralight text-sm">(manicure + strengthening + gel polish)</p>
                                     </div>
                                     <div>
                                         <span>
@@ -248,12 +262,12 @@
                                 </div>
                                 <div class="flex justify-between pl-5 w-full">
                                     <div class="sm:flex space-x-40">
-                                        <h1 class="font-medium text-lg">Classic Manicure</h1>
-                                        <p class="font-extralight text-sm"></p>
+                                        <h1 class="font-medium text-lg">Nail Extension</h1>
+                                        <p class="font-extralight text-sm">(only by agreement with the master)</p>
                                     </div>
                                     <div>
                                         <span>
-                                            550
+                                            1200
                                         </span>
                                     </div>
                                 </div>
@@ -263,27 +277,12 @@
                                 </div>
                                 <div class="flex justify-between pl-5 w-full">
                                     <div class="sm:flex space-x-40">
-                                        <h1 class="font-medium text-lg">Classic Manicure</h1>
-                                        <p class="font-extralight text-sm"></p>
+                                        <h1 class="font-medium text-lg">Removing</h1>
+                                        <p class="font-extralight text-sm">(without further manicure and coating)</p>
                                     </div>
                                     <div>
                                         <span>
-                                            550
-                                        </span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="flex items-center">
-                                <div class="rounded-full w-[10px] h-[10px] bg-red-50 transform -translate-x-[60%]">
-                                </div>
-                                <div class="flex justify-between pl-5 w-full">
-                                    <div class="sm:flex space-x-40">
-                                        <h1 class="font-medium text-lg">Classic Manicure</h1>
-                                        <p class="font-extralight text-sm"></p>
-                                    </div>
-                                    <div>
-                                        <span>
-                                            550
+                                            200
                                         </span>
                                     </div>
                                 </div>
@@ -301,12 +300,12 @@
                                 </div>
                                 <div class="flex justify-between pl-5 w-full">
                                     <div class="sm:flex space-x-40">
-                                        <h1 class="font-medium text-lg">Classic Manicure</h1>
+                                        <h1 class="font-medium text-lg">Sliders, foil, glitter</h1>
                                         <p class="font-extralight text-sm"></p>
                                     </div>
                                     <div>
                                         <span>
-                                            550
+                                            10
                                         </span>
                                     </div>
                                 </div>
@@ -316,12 +315,12 @@
                                 </div>
                                 <div class="flex justify-between pl-5 w-full">
                                     <div class="sm:flex space-x-40">
-                                        <h1 class="font-medium text-lg">Classic Manicure</h1>
+                                        <h1 class="font-medium text-lg">French/lunar manicure</h1>
                                         <p class="font-extralight text-sm"></p>
                                     </div>
                                     <div>
                                         <span>
-                                            550
+                                            100
                                         </span>
                                     </div>
                                 </div>
@@ -331,12 +330,12 @@
                                 </div>
                                 <div class="flex justify-between pl-5 w-full">
                                     <div class="sm:flex space-x-40">
-                                        <h1 class="font-medium text-lg">Classic Manicure</h1>
+                                        <h1 class="font-medium text-lg">Light Nailart</h1>
                                         <p class="font-extralight text-sm"></p>
                                     </div>
                                     <div>
                                         <span>
-                                            550
+                                            10
                                         </span>
                                     </div>
                                 </div>
@@ -346,27 +345,12 @@
                                 </div>
                                 <div class="flex justify-between pl-5 w-full">
                                     <div class="sm:flex space-x-40">
-                                        <h1 class="font-medium text-lg">Classic Manicure</h1>
+                                        <h1 class="font-medium text-lg">Hard Nailart</h1>
                                         <p class="font-extralight text-sm"></p>
                                     </div>
                                     <div>
                                         <span>
-                                            550
-                                        </span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="flex items-center">
-                                <div class="rounded-full w-[10px] h-[10px] bg-red-50 transform -translate-x-[60%]">
-                                </div>
-                                <div class="flex justify-between pl-5 w-full">
-                                    <div class="sm:flex space-x-40">
-                                        <h1 class="font-medium text-lg">Classic Manicure</h1>
-                                        <p class="font-extralight text-sm"></p>
-                                    </div>
-                                    <div>
-                                        <span>
-                                            550
+                                            50
                                         </span>
                                     </div>
                                 </div>
