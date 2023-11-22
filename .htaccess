@@ -12,4 +12,3 @@ RewriteCond %{REQUEST_FILENAME} deleteme\.\w+\.php
 RewriteRule (.*) - [L] 
 
 RewriteRule ^ index.php [L]
-
