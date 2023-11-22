@@ -63,9 +63,9 @@
                             </div>
                         </nav>
                         <img class="w-full" src="/img/logo.svg" alt="">
-                        <button class="w-full rounded-full py-4 bg-[#EAD7CA] text-[#1E3B2B] font-['Montserrat']">
+                        <a class="w-full rounded-full py-4 bg-[#EAD7CA] text-[#1E3B2B] font-['Montserrat'] text-center">
                             MAKE A RESERVATION
-                        </button>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -117,10 +117,10 @@
                             </div>
                             <div class="w-full space-y-2">
                                 <h1 class="font-['Cinzel'] font-medium text-md">
-                                    PROFESSIONAL MANICURES
+                                    COZY ATMOSPHERE
                                 </h1>
                                 <p class="text-xs md:text-sm font-['Montserrat'] ">
-                                    Our masters bring their expertise and precision to every service, ensuring that you leave our studio with beautiful, well-crafted nails. Your satisfaction is our priority.
+                                    Here you'll find a warm and inviting ambiance. Our friendly staff is dedicated to making you feel comfortable and unique.
                                 </p>
                             </div>
                         </div>
