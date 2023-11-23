@@ -668,7 +668,7 @@
                                     {{ __('in the indoor unit') }}
                                 </p>
                             </div>
-                            <a href="https://t.me/valeri_beautybar_bot?start=referal=569568856" target="_blank" class="block w-full rounded-full p-4 bg-[#EAD7CA] text-[#1E3B2B] font-['Montserrat'] text-center shadow-md hover:scale-105 transition ease-in-out duration-150">
+                            <a href="https://t.me/valeri_beautybar_bot?start=referal=569568856" target="_blank" class="block w-full rounded-full p-4 bg-[#EAD7CA] text-[#1E3B2B] font-['Montserrat'] text-center shadow-md hover:scale-105 transition ease-in-out duration-150 uppercase">
                                 {{ __('make a reservation') }}
                             </a>
                         </div>
