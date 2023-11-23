@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" style="scroll-behavior: smooth;">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,27 +14,33 @@
     </head>
     <body class="">
         <main>
-            <section class="w-full bg-[#1E3B2B]">
+            <section id="main" class="w-full bg-[#1E3B2B]">
                 <div class="max-w-7xl md:flex w-full m-auto h-[800px]">
                     <nav class="md:hidden w-full m-auto flex font-['Montserrat'] text-[#EAD7CA] justify-between py-4 px-10 fixed bg-[#1E3B2B]">
                         <div x-data="{ menu: false }" class="relative">
-                            <a id="menu" href="#" @click="menu = ! menu" >MENU</a>
+                            <button id="menu" href="#" @click="menu = ! menu" @mouseover="menu = ! menu">MENU</button>
                         
                             <div x-cloak x-show="menu" @click="menu = false" class="fixed inset-0 z-10 w-full h-full"></div>
                         
-                            <div x-cloak x-show="menu" class="absolute left-0 z-10 mt-2 bg-white rounded-md shadow-xl border max-h-[200px] overflow-auto" id="menu">
-                                <a href="">MAIN</a>
-                                <a href="">ABOUT US</a>
+                            <div x-cloak x-show="menu" class="w-[200px] absolute left-0 z-10 mt-2 bg-[#1E3B2B] rounded-md shadow-xl border border-[#EAD7CA] overflow-auto" id="menu">
+                                <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#main">MAIN</a>
+                                <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#about">ABOUT US</a>
+                                <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#perks">OUR PERKS</a>
+                                <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#sterilization">STERILIZATION</a>
+                                <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#price">PRICE</a>
+                                <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#masters">OUR MASTERS</a>
+                                <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#contacts">CONTACTS</a>
                             </div>
                         </div>
                         <div x-data="{ lang: false }" class="relative">
-                            <a id="lang" href="#" @click="lang = ! lang">RU</a>
+                            <button id="lang" href="#" @click="lang = ! lang" @mouseover="lang = ! lang">RU</button>
                         
                             <div x-cloak x-show="lang" @click="lang = false" class="fixed inset-0 z-10 w-full h-full"></div>
                         
-                            <div x-cloak x-show="lang" class="absolute left-0 z-10 mt-2 bg-white rounded-md shadow-xl border max-h-[200px] overflow-auto" id="lang">
-                                <a href="">CZ</a>
-                                <a href="">EN</a>
+                            <div x-cloak x-show="lang" class="w-[200px] absolute right-0 z-10 mt-2 bg-[#1E3B2B] rounded-md shadow-xl border border-[#EAD7CA] overflow-auto" id="lang">
+                                <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="">RU</a>
+                                <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="">CZ</a>
+                                <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="">EN</a>
                             </div>
                         </div>
                     </nav>
@@ -43,23 +49,29 @@
                     <div class="h-1/2 md:h-full w-full grid p-10 lg:p-20 content-between">
                         <nav class="hidden md:flex w-full m-auto  font-['Montserrat'] text-[#EAD7CA] justify-between">
                             <div x-data="{ menu: false }" class="relative">
-                                <a id="menu" href="#" @click="menu = ! menu" >MENU</a>
+                                <button id="menu" href="#" @click="menu = ! menu" @mouseover="menu = ! menu">MENU</button>
                             
                                 <div x-cloak x-show="menu" @click="menu = false" class="fixed inset-0 z-10 w-full h-full"></div>
                             
-                                <div x-cloak x-show="menu" class="absolute left-0 z-10 mt-2 bg-white rounded-md shadow-xl border max-h-[200px] overflow-auto" id="menu">
-                                    <a href="">MAIN</a>
-                                    <a href="">ABOUT US</a>
+                                <div x-cloak x-show="menu" class="w-[200px] absolute left-0 z-10 mt-2 bg-[#1E3B2B] rounded-md shadow-xl border border-[#EAD7CA] overflow-auto" id="menu">
+                                    <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#main">MAIN</a>
+                                    <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#about">ABOUT US</a>
+                                    <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#perks">OUR PERKS</a>
+                                    <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#sterilization">STERILIZATION</a>
+                                    <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#price">PRICE</a>
+                                    <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#masters">OUR MASTERS</a>
+                                    <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#contacts">CONTACTS</a>
                                 </div>
                             </div>
                             <div x-data="{ lang: false }" class="relative">
-                                <a id="lang" href="#" @click="lang = ! lang">RU</a>
+                                <button id="lang" href="#" @click="lang = ! lang" @mouseover="lang = ! lang">RU</button>
                             
                                 <div x-cloak x-show="lang" @click="lang = false" class="fixed inset-0 z-10 w-full h-full"></div>
                             
-                                <div x-cloak x-show="lang" class="absolute left-0 z-10 mt-2 bg-white rounded-md shadow-xl border max-h-[200px] overflow-auto" id="lang">
-                                    <a href="">CZ</a>
-                                    <a href="">EN</a>
+                                <div x-cloak x-show="lang" class="w-[200px] absolute right-0 z-10 mt-2 bg-[#1E3B2B] rounded-md shadow-xl border border-[#EAD7CA] overflow-auto" id="lang">
+                                    <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="">RU</a>
+                                    <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="">CZ</a>
+                                    <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="">EN</a>
                                 </div>
                             </div>
                         </nav>
@@ -71,7 +83,7 @@
                 </div>
             </section>
 
-            <section class="w-full bg-[#F1EBE7]">
+            <section id="about" class="w-full bg-[#F1EBE7]">
                 <div class="max-w-7xl flex w-full m-auto p-10 lg:p-20 space-x-16 items-center">
                     <div class="sm:w-3/5">
                         <div class="grid h-full content-between text-center py-12 space-y-16">
@@ -96,7 +108,7 @@
                 </div>
             </section>
 
-            <section class="w-full bg-[#1E3B2B] ">
+            <section id="perks" class="w-full bg-[#1E3B2B] ">
                 <div class="max-w-7xl w-full m-auto px-5 py-10 lg:p-20 space-y-12 md:space-y-20">
                     <div class="w-full sm:flex space-y-12 sm:space-x-10 lg:space-x-20 sm:space-y-0">
                         <div class="w-full flex space-x-3 text-[#EAD7CA] md:px-5">
@@ -157,7 +169,7 @@
                 </div>
             </section>
 
-            <section class="w-full bg-[#F1EBE7] ">
+            <section id="sterilization" class="w-full bg-[#F1EBE7] ">
                 <div class="max-w-7xl flex w-full m-auto px-5 py-10 lg:p-20">
                     <div class="overwlow-auto sm:flex text-center space-y-12 sm:space-y-0">
                         <div class="w-full sm:w-1/3 grid content-between sm:border-b-[1px] sm:border-b-[#1E3B2B] justify-center space-y-12 px-4">
@@ -200,7 +212,7 @@
                 </div>
             </section>
 
-            <section class="w-full bg-[#1E3B2B] ">
+            <section id="price" class="w-full bg-[#1E3B2B] ">
                 <div class="max-w-5xl w-full m-auto px-5 py-10 lg:p-20 space-y-16">
                     <h1 class="m-auto sm:w-3/4 text-center uppercase border-2 border-[#EAD7CA] rounded-full py-3 text-[#EAD7CA] font-['Cinzel'] text-2xl">PRICE LIST</h1>
                     <div class="flex justify-end font-medium">
@@ -377,7 +389,7 @@
                                         </div>
                                         <div>
                                             <span>
-                                                550
+                                                450
                                             </span>
                                         </div>
                                     </div>
@@ -392,7 +404,7 @@
                                         </div>
                                         <div>
                                             <span>
-                                                800
+                                                700
                                             </span>
                                         </div>
                                     </div>
@@ -407,22 +419,7 @@
                                         </div>
                                         <div>
                                             <span>
-                                                550
-                                            </span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="flex items-center">
-                                    <div class="rounded-full w-[10px] h-[10px] bg-red-50 transform -translate-x-[60%]">
-                                    </div>
-                                    <div class="flex justify-between pl-5 w-full">
-                                        <div class="md:flex w-full">
-                                            <h1 class="md:w-1/2 font-medium text-lg">Nail Extension*</h1>
-                                            <p class="md:w-1/2 font-extralight text-sm ">(only by agreement with the master)</p>
-                                        </div>
-                                        <div>
-                                            <span>
-                                                1200
+                                                800
                                             </span>
                                         </div>
                                     </div>
@@ -437,7 +434,7 @@
                                         </div>
                                         <div>
                                             <span>
-                                                200
+                                                150
                                             </span>
                                         </div>
                                     </div>
@@ -495,21 +492,6 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="flex items-center">
-                                    <div class="rounded-full w-[10px] h-[10px] bg-red-50 transform -translate-x-[60%]">
-                                    </div>
-                                    <div class="flex justify-between pl-5 w-full">
-                                        <div class="sm:flex space-x-40 justify-around">
-                                            <h1 class="font-medium text-lg">Hard Nailart</h1>
-                                            <p class="font-extralight text-sm"></p>
-                                        </div>
-                                        <div>
-                                            <span>
-                                                50
-                                            </span>
-                                        </div>
-                                    </div>
-                                </li>
                             </ul>
                         </div>
                     </div>
@@ -528,7 +510,7 @@
                 </div>
             </section>
 
-            <section class="w-full bg-[#F1EBE7] ">
+            <section id="masters" class="w-full bg-[#F1EBE7] ">
                 <div class="max-w-7xl w-full m-auto px-5 py-10 lg:p-20 space-y-16 md:space-y-20">
                     <h1 class="text-2xl font-['Cinzel'] font-medium text-[#1E3B2B] uppercase text-center w-full">
                         our masters are the real professionals 
@@ -584,15 +566,17 @@
                         </div>
                     </div>
                     <div class="sm:flex justify-around space-y-6 sm:space-y-0">
-                        <h1 class="text-left text-lg font-['Zapfino'] text-[#6B1C02] font-thin w-full leading-10">We also have gift certificates available for manicure services </h1>
-                        <div>
-                            icons
+                        <h1 class="text-left text-lg font-['Zapfino'] text-[#6B1C02] font-thin w-full leading-10">We'll make a perfect manicure and choose the perfect nail polish for you</h1>
+                        <div class="w-full flex space-x-5 justify-end">
+                            <img src="/img/icon/inst.svg" alt="">
+                            <img src="/img/icon/telegram.svg" alt="">
+                            <img src="/img/icon/tik tok.svg" alt="">
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="w-full bg-[#1E3B2B] ">
+            <section id="contacts" class="w-full bg-[#1E3B2B] ">
                 <div class=" max-w-7xl w-full m-auto px-5 py-10 lg:p-20 space-y-16">
                     <div class="w-full sm:flex sm:space-x-16 space-y-16 sm:space-y-0 items-center">
                         <div class="w-full sm:w-1/2 md:w-1/3 text-center space-y-16">
