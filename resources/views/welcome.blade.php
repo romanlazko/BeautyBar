@@ -235,7 +235,7 @@
                         </button>
                     </div>
                     <div id="valeri" class="space-y-16 bg-[#1E3B2B]" x-show="show" x-transition.duration.200ms>
-                        <h1 class="m-auto text-center uppercase border-2 bg-[#EAD7CA] rounded-full h-full px-1 sm:px-3 text-[#1E3B2B] font-['Cinzel'] text-2xl whitespace-nowrap sm:hidden">
+                        <h1 class="m-auto text-center uppercase bg-[#EAD7CA] rounded-full h-full px-1 sm:px-3 text-[#1E3B2B] font-['Cinzel'] text-2xl whitespace-nowrap sm:hidden">
                             {{ __('Nail services') }}
                         </h1>
                         <div class="w-full flex sm:space-x-6">
@@ -340,7 +340,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <h1 class="m-auto text-center uppercase border-2 bg-[#EAD7CA] rounded-full h-full px-1 sm:px-3 text-[#1E3B2B] font-['Cinzel'] text-2xl whitespace-nowrap sm:hidden">
+                        <h1 class="m-auto text-center uppercase bg-[#EAD7CA] rounded-full h-full px-1 sm:px-3 text-[#1E3B2B] font-['Cinzel'] text-2xl whitespace-nowrap sm:hidden">
                             {{ __('Nail art') }}
                         </h1>
                         <div class="w-full flex sm:space-x-6">
@@ -422,12 +422,12 @@
                         </div>
                     </div>
                     <div id="sofi" class="space-y-16 bg-[#1E3B2B]" x-show="!show" x-transition.duration.200ms>
-                        <h1 class="m-auto text-center uppercase border-2 bg-[#EAD7CA] rounded-full h-full px-1 sm:px-3 text-[#1E3B2B] font-['Cinzel'] text-2xl whitespace-nowrap sm:hidden">
+                        <h1 class="m-auto text-center uppercase bg-[#EAD7CA] rounded-full h-full px-1 sm:px-3 text-[#1E3B2B] font-['Cinzel'] text-2xl whitespace-nowrap sm:hidden">
                             {{ __('Nail services') }}
                         </h1>
                         <div class="w-full flex sm:space-x-6">
                             <div style="writing-mode: vertical-rl; text-orientation: mixed; transform: rotate(180deg); transform-origin: center;" class="hidden sm:block">
-                                <h1 class="m-auto text-center uppercase border-2 bg-[#EAD7CA] rounded-full h-full px-1 sm:px-3 text-[#1E3B2B] font-['Cinzel'] text-2xl whitespace-nowrap">
+                                <h1 class="m-auto text-center uppercase bg-[#EAD7CA] rounded-full h-full px-1 sm:px-3 text-[#1E3B2B] font-['Cinzel'] text-2xl whitespace-nowrap">
                                     {{ __('Nail services') }}
                                 </h1>
                             </div>
@@ -508,7 +508,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <h1 class="m-auto text-center uppercase border-2 bg-[#EAD7CA] rounded-full h-full px-1 sm:px-3 text-[#1E3B2B] font-['Cinzel'] text-2xl whitespace-nowrap sm:hidden">
+                        <h1 class="m-auto text-center uppercase bg-[#EAD7CA] rounded-full h-full px-1 sm:px-3 text-[#1E3B2B] font-['Cinzel'] text-2xl whitespace-nowrap sm:hidden">
                             {{ __('Nail art') }}
                         </h1>
                         <div class="w-full flex sm:space-x-6">
