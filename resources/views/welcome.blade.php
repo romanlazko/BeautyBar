@@ -108,7 +108,7 @@
                                     {{ __('Just relax, enjoy and take your time.') }}
                                 </p>
                             </div>
-                            <h1 class="text-right text-md sm:text-lg font-['Zapfino'] text-[#6B1C02] font-thin">{{ __('Sincerelly yours Valeri Beuty Bar') }}</h1>
+                            <h1 class="text-right text-md sm:text-lg font-['Zapfino'] text-[#6B1C02] font-thin whitespace-nowrap">{{ __('Sincerelly yours Valeri Beuty Bar') }}</h1>
                         </div>
                     </div>
                     <div class="w-2/5 hidden sm:block">
@@ -640,8 +640,8 @@
                         </div>
                     </div>
                     <div class="sm:flex justify-around space-y-6 sm:space-y-0">
-                        <h1 class="text-left text-md sm:text-lg font-['Zapfino'] text-[#6B1C02] font-thin w-full leading-10">{{ __('We`ll make a perfect manicure and choose the perfect nail polish for you') }}</h1>
-                        <div class="w-full flex space-x-5 justify-end">
+                        <h1 class="text-center sm:text-left text-md sm:text-lg font-['Zapfino'] text-[#6B1C02] font-thin w-full leading-10">{{ __('We`ll make a perfect manicure and choose the perfect nail polish for you') }}</h1>
+                        <div class="w-full flex space-x-5 justify-center sm:justify-end">
                             <a href="https://instagram.com/valeri.beautybar" target="_blank">
                                 <img src="/img/icon/inst.svg" alt="">
                             </a>
