@@ -18,7 +18,7 @@
                 <div class="max-w-7xl md:flex w-full m-auto h-[800px]">
                     <nav class="md:hidden w-full m-auto flex font-['Montserrat'] text-[#EAD7CA] justify-between py-4 px-10 fixed bg-[#1E3B2B] shadow-lg">
                         <div x-data="{ menu: false }" class="relative">
-                            <button id="menu" href="#" @click="menu = ! menu" @mouseover="menu = ! menu">{{ __('MENU') }}</button>
+                            <button id="menu" href="#" @click="menu = ! menu">{{ __('MENU') }}</button>
                         
                             <div x-cloak x-show="menu" @click="menu = false" class="fixed inset-0 z-10 w-full h-full"></div>
                         
@@ -33,7 +33,7 @@
                             </div>
                         </div>
                         <div x-data="{ lang: false }" class="relative">
-                            <button id="lang" href="#" @click="lang = ! lang" @mouseover="lang = ! lang" class="uppercase">{{ session('my_locale', 'cz') ?? config('app.locale') }}</button>
+                            <button id="lang" href="#" @click="lang = ! lang" class="uppercase">{{ session('my_locale', 'cz') ?? config('app.locale') }}</button>
                         
                             <div x-cloak x-show="lang" @click="lang = false" class="fixed inset-0 z-10 w-full h-full"></div>
                         
