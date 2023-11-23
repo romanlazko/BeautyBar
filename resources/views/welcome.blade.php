@@ -16,7 +16,7 @@
         <main>
             <section id="main" class="w-full bg-[#1E3B2B]">
                 <div class="max-w-7xl md:flex w-full m-auto h-[800px]">
-                    <nav class="md:hidden w-full m-auto flex font-['Montserrat'] text-[#EAD7CA] justify-between py-4 px-10 fixed bg-[#1E3B2B] shadow-lg">
+                    <nav class="md:hidden w-full m-auto flex font-['Montserrat'] text-[#EAD7CA] justify-between py-4 px-10 fixed bg-[#1E3B2B] shadow-lg z-50">
                         <div x-data="{ menu: false }" class="relative">
                             <button id="menu" href="#" @click="menu = ! menu">{{ __('MENU') }}</button>
                         
@@ -46,7 +46,7 @@
                     <div class="h-1/2 md:h-full w-full bg-no-repeat bg-cover bg-center" style="background-image:url({{ asset('img/main.png')}});">
                     </div>
                     <div class="h-1/2 md:h-full w-full grid p-10 lg:p-20 content-between">
-                        <nav class="hidden md:flex w-full m-auto  font-['Montserrat'] text-[#EAD7CA] justify-between">
+                        <nav class="hidden md:flex w-full m-auto font-['Montserrat'] text-[#EAD7CA] justify-between">
                             <div x-data="{ menu: false }" class="relative">
                                 <button id="menu" href="#" @click="menu = ! menu" @mouseover="menu = ! menu">{{ __('MENU') }}</button>
                         
@@ -111,7 +111,7 @@
                     <div class="w-full sm:flex space-y-12 sm:space-x-10 lg:space-x-20 sm:space-y-0">
                         <div class="w-full flex space-x-3 text-[#EAD7CA] md:px-5">
                             <div>
-                                <img src="/img/icon/nail.svg" alt="" class="w-full h-full min-w-[5rem] shadow-md rounded-full">
+                                <img src="/img/icon/nail.svg" alt="" class="w-full h-min min-w-[5rem] shadow-md rounded-full">
                             </div>
                             <div class="w-full space-y-2">
                                 <h1 class="font-['Cinzel'] font-medium text-md">
@@ -124,7 +124,7 @@
                         </div>
                         <div class="w-full flex space-x-3 text-[#EAD7CA] md:px-5">
                             <div>
-                                <img src="/img/icon/coffee.svg" alt="" class="w-full h-full min-w-[5rem] shadow-md rounded-full">
+                                <img src="/img/icon/coffee.svg" alt="" class="w-full h-min min-w-[5rem] shadow-md rounded-full">
                             </div>
                             <div class="w-full space-y-2">
                                 <h1 class="font-['Cinzel'] font-medium text-md">
@@ -139,7 +139,7 @@
                     <div class="w-full sm:flex space-y-12 sm:space-x-10 lg:space-x-20 sm:space-y-0">
                         <div class="w-full flex space-x-3 text-[#EAD7CA] md:px-5">
                             <div>
-                                <img src="/img/icon/city.svg" alt="" class="w-full h-full min-w-[5rem] shadow-md rounded-full">
+                                <img src="/img/icon/city.svg" alt="" class="w-full h-min min-w-[5rem] shadow-md rounded-full">
                             </div>
                             <div class="w-full space-y-2">
                                 <h1 class="font-['Cinzel'] font-medium text-md">
@@ -152,7 +152,7 @@
                         </div>
                         <div class="w-full flex space-x-3 text-[#EAD7CA] md:px-5">
                             <div>
-                                <img src="/img/icon/palette.svg" alt="" class="w-full h-full min-w-[5rem] shadow-md rounded-full">
+                                <img src="/img/icon/palette.svg" alt="" class="w-full h-min min-w-[5rem] shadow-md rounded-full">
                             </div>
                             <div class="w-full space-y-2">
                                 <h1 class="font-['Cinzel'] font-medium text-md">
@@ -659,7 +659,7 @@
                             </a>
                         </div>
                         <div class="w-full sm:w-1/2 md:w-2/3">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.454929903613!2d16.60810277762968!3d49.191928871379304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47129456f6af2e4d%3A0x5653299386d3ad4c!2zRnJhbnRpxaFrw6Fuc2vDoSA1MDEsIDYwMiAwMCBCcm5vLW3Em3N0bw!5e0!3m2!1sru!2scz!4v1699533808755!5m2!1sru!2scz" class="w-full" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.454929903613!2d16.60810277762968!3d49.191928871379304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471294568b34f273%3A0x178e6c6b47ad6c0f!2sMasarykova%20427%2F31%2C%20602%2000%20Brno-m%C4%9Bsto!5e0!3m2!1sru!2scz!4v1700772719215!5m2!1sru!2scz" class="w-full" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
