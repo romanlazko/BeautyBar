@@ -33,7 +33,7 @@
                             </div>
                         </div>
                         <div x-data="{ lang: false }" class="relative">
-                            <button id="lang" href="#" @click="lang = ! lang" @mouseover="lang = ! lang">{{ session('my_locale') }}</button>
+                            <button id="lang" href="#" @click="lang = ! lang" @mouseover="lang = ! lang" class="uppercase">{{ session('my_locale', config('app.locale')) }}</button>
                         
                             <div x-cloak x-show="lang" @click="lang = false" class="fixed inset-0 z-10 w-full h-full"></div>
                         
