@@ -9,7 +9,7 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
-        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="">
@@ -211,19 +211,19 @@
             </section>
 
             <section id="price" class="w-full bg-[#1E3B2B] ">
-                <div class="max-w-5xl w-full m-auto px-5 py-10 lg:p-20 space-y-16">
+                <div class="max-w-5xl w-full m-auto px-5 py-10 lg:p-20 space-y-16" x-data="{ show: true }">
                     <h1 class="m-auto sm:w-3/4 text-center uppercase border-2 border-[#EAD7CA] rounded-full py-3 text-[#EAD7CA] font-['Cinzel'] text-2xl">
                         {{ __('PRICE LIST') }}
                     </h1>
                     <div class="flex justify-end font-medium">
-                        <button id="valeriButton" class="py-1 px-5 border bg-[#EAD7CA] rounded-l-full font-['Cinzel'] text-[#1E3B2B]" onclick="$(this).addClass('bg-[#EAD7CA] text-[#1E3B2B]'); $(this).removeClass('text-[#EAD7CA]'); $('#sofiButton').removeClass('bg-[#EAD7CA] text-[#1E3B2B]'); $('#sofiButton').addClass('text-[#EAD7CA]'); $('#sofi').hide(); $('#valeri').fadeIn('slow'); ">
+                        <button id="valeriButton" class="py-1 px-5 border rounded-l-full font-['Cinzel']" @click="show = true" :class="show ? 'bg-[#EAD7CA] text-[#1E3B2B]' : 'bg-[#1E3B2B] text-[#EAD7CA]'">
                             {{ __('VALERI') }}
                         </button>
-                        <button id="sofiButton" type="button" class="py-1 px-5 border rounded-r-full font-['Cinzel'] text-[#EAD7CA]" onclick="$(this).addClass('bg-[#EAD7CA] text-[#1E3B2B]'); $(this).removeClass('text-[#EAD7CA]'); $('#valeriButton').removeClass('bg-[#EAD7CA] text-[#1E3B2B]'); $('#valeriButton').addClass('text-[#EAD7CA]'); $('#sofi').fadeIn('slow'); $('#valeri').hide();">
+                        <button id="sofiButton" type="button" class="py-1 px-5 border rounded-r-full font-['Cinzel']" @click="show = false" :class="! show ? 'bg-[#EAD7CA] text-[#1E3B2B]' : 'bg-[#1E3B2B] text-[#EAD7CA]'">
                             {{ __('SOFI') }}
                         </button>
                     </div>
-                    <div id="valeri" class="space-y-16 bg-[#1E3B2B]">
+                    <div id="valeri" class="space-y-16 bg-[#1E3B2B]" x-show="show" x-transition.duration.200ms>
                         <h1 class="m-auto text-center uppercase border-2 bg-[#EAD7CA] rounded-full h-full px-1 sm:px-3 text-[#1E3B2B] font-['Cinzel'] text-2xl whitespace-nowrap sm:hidden">
                             {{ __('Nail services') }}
                         </h1>
@@ -410,7 +410,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div id="sofi" class="hidden space-y-16 bg-[#1E3B2B]">
+                    <div id="sofi" class="space-y-16 bg-[#1E3B2B]" x-show="!show" x-transition.duration.200ms>
                         <h1 class="m-auto text-center uppercase border-2 bg-[#EAD7CA] rounded-full h-full px-1 sm:px-3 text-[#1E3B2B] font-['Cinzel'] text-2xl whitespace-nowrap sm:hidden">
                             {{ __('Nail services') }}
                         </h1>
