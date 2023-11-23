@@ -16,20 +16,20 @@
         <main>
             <section id="main" class="w-full bg-[#1E3B2B]">
                 <div class="max-w-7xl md:flex w-full m-auto h-[800px]">
-                    <nav class="md:hidden w-full m-auto flex font-['Montserrat'] text-[#EAD7CA] justify-between py-4 px-10 fixed bg-[#1E3B2B]">
+                    <nav class="md:hidden w-full m-auto flex font-['Montserrat'] text-[#EAD7CA] justify-between py-4 px-10 fixed bg-[#1E3B2B] shadow-lg">
                         <div x-data="{ menu: false }" class="relative">
-                            <button id="menu" href="#" @click="menu = ! menu" @mouseover="menu = ! menu">MENU</button>
+                            <button id="menu" href="#" @click="menu = ! menu" @mouseover="menu = ! menu">{{ __('MENU') }}</button>
                         
                             <div x-cloak x-show="menu" @click="menu = false" class="fixed inset-0 z-10 w-full h-full"></div>
                         
                             <div x-cloak x-show="menu" class="w-[200px] absolute left-0 z-10 mt-2 bg-[#1E3B2B] rounded-md shadow-xl border border-[#EAD7CA] overflow-auto" id="menu">
-                                <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#main">MAIN</a>
-                                <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#about">ABOUT US</a>
-                                <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#perks">OUR PERKS</a>
-                                <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#sterilization">STERILIZATION</a>
-                                <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#price">PRICE</a>
-                                <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#masters">OUR MASTERS</a>
-                                <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#contacts">CONTACTS</a>
+                                <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#main">{{ __('MAIN') }}</a>
+                                <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#about">{{ __('ABOUT US') }}</a>
+                                <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#perks">{{ __('OUR PERKS') }}</a>
+                                <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#sterilization">{{ __('STERILIZATION') }}</a>
+                                <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#price">{{ __('PRICE') }}</a>
+                                <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#masters">{{ __('OUR MASTERS') }}</a>
+                                <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#contacts">{{ __('CONTACTS') }}</a>
                             </div>
                         </div>
                         <div x-data="{ lang: false }" class="relative">
@@ -38,9 +38,8 @@
                             <div x-cloak x-show="lang" @click="lang = false" class="fixed inset-0 z-10 w-full h-full"></div>
                         
                             <div x-cloak x-show="lang" class="w-[200px] absolute right-0 z-10 mt-2 bg-[#1E3B2B] rounded-md shadow-xl border border-[#EAD7CA] overflow-auto" id="lang">
-                                <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="">RU</a>
-                                <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="">CZ</a>
-                                <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="">EN</a>
+                                <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="{{ route('language', 'cz') }}">CZ</a>
+                                <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="{{ route('language', 'en') }}">EN</a>
                             </div>
                         </div>
                     </nav>
@@ -49,18 +48,18 @@
                     <div class="h-1/2 md:h-full w-full grid p-10 lg:p-20 content-between">
                         <nav class="hidden md:flex w-full m-auto  font-['Montserrat'] text-[#EAD7CA] justify-between">
                             <div x-data="{ menu: false }" class="relative">
-                                <button id="menu" href="#" @click="menu = ! menu" @mouseover="menu = ! menu">MENU</button>
-                            
+                                <button id="menu" href="#" @click="menu = ! menu" @mouseover="menu = ! menu">{{ __('MENU') }}</button>
+                        
                                 <div x-cloak x-show="menu" @click="menu = false" class="fixed inset-0 z-10 w-full h-full"></div>
                             
                                 <div x-cloak x-show="menu" class="w-[200px] absolute left-0 z-10 mt-2 bg-[#1E3B2B] rounded-md shadow-xl border border-[#EAD7CA] overflow-auto" id="menu">
-                                    <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#main">MAIN</a>
-                                    <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#about">ABOUT US</a>
-                                    <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#perks">OUR PERKS</a>
-                                    <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#sterilization">STERILIZATION</a>
-                                    <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#price">PRICE</a>
-                                    <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#masters">OUR MASTERS</a>
-                                    <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#contacts">CONTACTS</a>
+                                    <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#main">{{ __('MAIN') }}</a>
+                                    <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#about">{{ __('ABOUT US') }}</a>
+                                    <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#perks">{{ __('OUR PERKS') }}</a>
+                                    <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#sterilization">{{ __('STERILIZATION') }}</a>
+                                    <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#price">{{ __('PRICE') }}</a>
+                                    <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#masters">{{ __('OUR MASTERS') }}</a>
+                                    <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#contacts">{{ __('CONTACTS') }}</a>
                                 </div>
                             </div>
                             <div x-data="{ lang: false }" class="relative">
@@ -69,15 +68,14 @@
                                 <div x-cloak x-show="lang" @click="lang = false" class="fixed inset-0 z-10 w-full h-full"></div>
                             
                                 <div x-cloak x-show="lang" class="w-[200px] absolute right-0 z-10 mt-2 bg-[#1E3B2B] rounded-md shadow-xl border border-[#EAD7CA] overflow-auto" id="lang">
-                                    <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="">RU</a>
-                                    <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="">CZ</a>
-                                    <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="">EN</a>
+                                    <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="{{ route('language', 'cz') }}">CZ</a>
+                                    <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="{{ route('language', 'en') }}">EN</a>
                                 </div>
                             </div>
                         </nav>
                         <img class="w-full" src="/img/logo.svg" alt="">
-                        <a href="https://t.me/valeri_beautybar_bot?start=referal=569568856" class="block w-full rounded-full p-4 bg-[#EAD7CA] text-[#1E3B2B] font-['Montserrat'] text-center">
-                            MAKE A RESERVATION
+                        <a href="https://t.me/valeri_beautybar_bot?start=referal=569568856" class="block w-full rounded-full p-4 bg-[#EAD7CA] text-[#1E3B2B] font-['Montserrat'] text-center shadow-md hover:scale-105 transition ease-in-out duration-150">
+                            {{ __('MAKE A RESERVATION') }}
                         </a>
                     </div>
                 </div>
@@ -87,19 +85,19 @@
                 <div class="max-w-7xl flex w-full m-auto p-10 lg:p-20 space-x-16 items-center">
                     <div class="sm:w-3/5">
                         <div class="grid h-full content-between text-center py-12 space-y-16">
-                            <h1 class="text-2xl font-['Cinzel'] font-medium text-[#1E3B2B]">WE ARE HAPPY TO SEE YOU IN <br> VALERI BEAUTY BAR</h1>
+                            <h1 class="text-2xl font-['Cinzel'] font-medium text-[#1E3B2B]">{{ __('WE ARE HAPPY TO SEE YOU IN') }} <br> VALERI BEAUTY BAR</h1>
                             <div class="space-y-6 font-['Montserrat'] text-base text-[#1E3B2B]">
                                 <p>
-                                    Our mission is to inspire and to show you, that manicure is not only a beauty procedure,  but an expression of self-care. 
+                                    {{ __('Our mission is to inspire and to show you, that manicure is not only a beauty procedure,  but an expression of self-care.') }}
                                 </p>
                                 <p>
-                                    You shouldn’t worry about the quality and comfort - leave it for us. 
+                                    {{ __('You shouldn’t worry about the quality and comfort - leave it for us.') }}
                                 </p>
                                 <p>
-                                    Just relax, enjoy and take your time. 
+                                    {{ __('Just relax, enjoy and take your time.') }}
                                 </p>
                             </div>
-                            <h1 class="text-right text-lg font-['Zapfino'] text-[#6B1C02] font-thin">Sincerelly yours Valeri Beuty Bar</h1>
+                            <h1 class="text-right text-lg font-['Zapfino'] text-[#6B1C02] font-thin">{{ __('Sincerelly yours Valeri Beuty Bar') }}</h1>
                         </div>
                     </div>
                     <div class="w-2/5 hidden sm:block">
@@ -113,27 +111,27 @@
                     <div class="w-full sm:flex space-y-12 sm:space-x-10 lg:space-x-20 sm:space-y-0">
                         <div class="w-full flex space-x-3 text-[#EAD7CA] md:px-5">
                             <div>
-                                <img src="/img/icon/nail.svg" alt="" class="w-full h-full min-w-[5rem]">
+                                <img src="/img/icon/nail.svg" alt="" class="w-full h-full min-w-[5rem] shadow-md rounded-full">
                             </div>
                             <div class="w-full space-y-2">
                                 <h1 class="font-['Cinzel'] font-medium text-md">
-                                    PROFESSIONAL MANICURES
+                                    {{ __('PROFESSIONAL MANICURES') }}
                                 </h1>
                                 <p class="text-xs md:text-sm font-['Montserrat'] ">
-                                    Our masters bring their expertise and precision to every service, ensuring that you leave our studio with beautiful, well-crafted nails. Your satisfaction is our priority.
+                                    {{ __('Our masters bring their expertise and precision to every service, ensuring that you leave our studio with beautiful, well-crafted nails. Your satisfaction is our priority.') }}
                                 </p>
                             </div>
                         </div>
                         <div class="w-full flex space-x-3 text-[#EAD7CA] md:px-5">
                             <div>
-                                <img src="/img/icon/coffee.svg" alt="" class="w-full h-full min-w-[5rem]">
+                                <img src="/img/icon/coffee.svg" alt="" class="w-full h-full min-w-[5rem] shadow-md rounded-full">
                             </div>
                             <div class="w-full space-y-2">
                                 <h1 class="font-['Cinzel'] font-medium text-md">
-                                    COZY ATMOSPHERE
+                                    {{ __('COZY ATMOSPHERE') }}
                                 </h1>
                                 <p class="text-xs md:text-sm font-['Montserrat'] ">
-                                    Here you'll find a warm and inviting ambiance. Our friendly staff is dedicated to making you feel comfortable and unique.
+                                    {{ __('Here you`ll find a warm and inviting ambiance. Our friendly staff is dedicated to making you feel comfortable and unique.') }}
                                 </p>
                             </div>
                         </div>
@@ -141,27 +139,27 @@
                     <div class="w-full sm:flex space-y-12 sm:space-x-10 lg:space-x-20 sm:space-y-0">
                         <div class="w-full flex space-x-3 text-[#EAD7CA] md:px-5">
                             <div>
-                                <img src="/img/icon/city.svg" alt="" class="w-full h-full min-w-[5rem]">
+                                <img src="/img/icon/city.svg" alt="" class="w-full h-full min-w-[5rem] shadow-md rounded-full">
                             </div>
                             <div class="w-full space-y-2">
                                 <h1 class="font-['Cinzel'] font-medium text-md">
-                                    PRIME LOCATION
+                                    {{ __('PRIME LOCATION') }}
                                 </h1>
                                 <p class="text-xs md:text-sm font-['Montserrat'] ">
-                                    Our studio is situated in the heart of the city, which making it more accessible to clients.
+                                    {{ __('Our studio is situated in the heart of the city, making it more accessible to clients.') }}
                                 </p>
                             </div>
                         </div>
                         <div class="w-full flex space-x-3 text-[#EAD7CA] md:px-5">
                             <div>
-                                <img src="/img/icon/palette.svg" alt="" class="w-full h-full min-w-[5rem]">
+                                <img src="/img/icon/palette.svg" alt="" class="w-full h-full min-w-[5rem] shadow-md rounded-full">
                             </div>
                             <div class="w-full space-y-2">
                                 <h1 class="font-['Cinzel'] font-medium text-md">
-                                    WIDE COLOR PALETTE
+                                    {{ __('WIDE COLOR PALETTE') }}
                                 </h1>
                                 <p class="text-xs md:text-sm font-['Montserrat'] ">
-                                    Choose from a vast spectrum of nail polish colors to match your unique style and mood.
+                                    {{ __('Choose from a vast spectrum of nail polish colors to match your unique style and mood.') }}
                                 </p>
                             </div>
                         </div>
@@ -175,10 +173,10 @@
                         <div class="w-full sm:w-1/3 grid content-between sm:border-b-[1px] sm:border-b-[#1E3B2B] justify-center space-y-12 px-4">
                             <div class="space-y-8">
                                 <h1 class="text-2xl font-['Cinzel'] font-medium text-[#1E3B2B] uppercase">
-                                    desinfection
+                                    {{ __('desinfection') }}
                                 </h1>
                                 <p class="font-['Montserrat'] text-base text-[#1E3B2B] ">
-                                    We wash and disinfect our hands using special products before we start working with each client.
+                                    {{ __('We wash and disinfect our hands using special products before we start working with each client.') }}
                                 </p>
                             </div>
                             <div class="m-auto rounded-full w-[10px] h-[10px] bg-[#1E3B2B] transform translate-y-[60%]">
@@ -187,10 +185,10 @@
                         <div class="w-full sm:w-1/3 grid content-between sm:border-b-[1px] sm:border-b-[#1E3B2B] justify-center space-y-12 px-4">
                             <div class="space-y-8">
                                 <h1 class="text-2xl font-['Cinzel'] font-medium text-[#1E3B2B] uppercase">
-                                    sterile tools
+                                    {{ __('sterile tools') }}
                                 </h1>
                                 <p class="font-['Montserrat'] text-base text-[#1E3B2B] ">
-                                    All instruments used in manicure go through a cleaning and sterilization procedure in special devices. This ensures that they are completely safe to use.
+                                    {{ __('All instruments used in manicure go through a cleaning and sterilization procedure in special devices. This ensures that they are completely safe to use.') }}
                                 </p>
                             </div>
                             <div class="m-auto rounded-full w-[10px] h-[10px] bg-[#1E3B2B] transform translate-y-[60%]">
@@ -199,10 +197,10 @@
                         <div class="w-full sm:w-1/3 grid content-between sm:border-b-[1px] sm:border-b-[#1E3B2B] justify-center space-y-12 px-4">
                             <div class="space-y-8">
                                 <h1 class="text-2xl font-['Cinzel'] font-medium text-[#1E3B2B] uppercase">
-                                    clean surface
+                                    {{ __('clean surface') }}
                                 </h1>
                                 <p class="font-['Montserrat'] text-base text-[#1E3B2B] ">
-                                    The surfaces on which the master works are also regularly disinfected and cleaned to eliminate the risk of transmitting infections.
+                                    {{ __('The surfaces on which the master works are also regularly disinfected and cleaned to eliminate the risk of transmitting infections.') }}
                                 </p>
                             </div>
                             <div class="m-auto rounded-full w-[10px] h-[10px] bg-[#1E3B2B] transform translate-y-[60%]">
@@ -214,16 +212,26 @@
 
             <section id="price" class="w-full bg-[#1E3B2B] ">
                 <div class="max-w-5xl w-full m-auto px-5 py-10 lg:p-20 space-y-16">
-                    <h1 class="m-auto sm:w-3/4 text-center uppercase border-2 border-[#EAD7CA] rounded-full py-3 text-[#EAD7CA] font-['Cinzel'] text-2xl">PRICE LIST</h1>
+                    <h1 class="m-auto sm:w-3/4 text-center uppercase border-2 border-[#EAD7CA] rounded-full py-3 text-[#EAD7CA] font-['Cinzel'] text-2xl">
+                        {{ __('PRICE LIST') }}
+                    </h1>
                     <div class="flex justify-end font-medium">
-                        <button id="valeriButton" class="py-1 px-5 border bg-[#EAD7CA] rounded-l-full font-['Cinzel'] text-[#1E3B2B]" onclick="$(this).addClass('bg-[#EAD7CA] text-[#1E3B2B]'); $(this).removeClass('text-[#EAD7CA]'); $('#sofiButton').removeClass('bg-[#EAD7CA] text-[#1E3B2B]'); $('#sofiButton').addClass('text-[#EAD7CA]'); $('#sofi').hide(); $('#valeri').fadeIn('slow'); ">VALERI</button>
-                        <button id="sofiButton" type="button" class="py-1 px-5 border rounded-r-full font-['Cinzel'] text-[#EAD7CA]" onclick="$(this).addClass('bg-[#EAD7CA] text-[#1E3B2B]'); $(this).removeClass('text-[#EAD7CA]'); $('#valeriButton').removeClass('bg-[#EAD7CA] text-[#1E3B2B]'); $('#valeriButton').addClass('text-[#EAD7CA]'); $('#sofi').fadeIn('slow'); $('#valeri').hide();">SOFI</button>
+                        <button id="valeriButton" class="py-1 px-5 border bg-[#EAD7CA] rounded-l-full font-['Cinzel'] text-[#1E3B2B]" onclick="$(this).addClass('bg-[#EAD7CA] text-[#1E3B2B]'); $(this).removeClass('text-[#EAD7CA]'); $('#sofiButton').removeClass('bg-[#EAD7CA] text-[#1E3B2B]'); $('#sofiButton').addClass('text-[#EAD7CA]'); $('#sofi').hide(); $('#valeri').fadeIn('slow'); ">
+                            {{ __('VALERI') }}
+                        </button>
+                        <button id="sofiButton" type="button" class="py-1 px-5 border rounded-r-full font-['Cinzel'] text-[#EAD7CA]" onclick="$(this).addClass('bg-[#EAD7CA] text-[#1E3B2B]'); $(this).removeClass('text-[#EAD7CA]'); $('#valeriButton').removeClass('bg-[#EAD7CA] text-[#1E3B2B]'); $('#valeriButton').addClass('text-[#EAD7CA]'); $('#sofi').fadeIn('slow'); $('#valeri').hide();">
+                            {{ __('SOFI') }}
+                        </button>
                     </div>
                     <div id="valeri" class="space-y-16 bg-[#1E3B2B]">
-                        <h1 class="m-auto text-center uppercase border-2 bg-[#EAD7CA] rounded-full h-full px-1 sm:px-3 text-[#1E3B2B] font-['Cinzel'] text-2xl whitespace-nowrap sm:hidden">Nail services</h1>
+                        <h1 class="m-auto text-center uppercase border-2 bg-[#EAD7CA] rounded-full h-full px-1 sm:px-3 text-[#1E3B2B] font-['Cinzel'] text-2xl whitespace-nowrap sm:hidden">
+                            {{ __('Nail services') }}
+                        </h1>
                         <div class="w-full flex sm:space-x-6">
                             <div style="writing-mode: vertical-rl; text-orientation: mixed; transform: rotate(180deg); transform-origin: center;" class="hidden sm:block">
-                                <h1 class="m-auto text-center uppercase border-2 bg-[#EAD7CA] rounded-full h-full px-1 sm:px-3 text-[#1E3B2B] font-['Cinzel'] text-2xl whitespace-nowrap">Nail services</h1>
+                                <h1 class="m-auto text-center uppercase border-2 bg-[#EAD7CA] rounded-full h-full px-1 sm:px-3 text-[#1E3B2B] font-['Cinzel'] text-2xl whitespace-nowrap">
+                                    {{ __('Nail services') }}
+                                </h1>
                             </div>
                             <ul class="w-full space-y-10 text-[#EAD7CA] font-['Montserrat'] border-l-[1px] py-5">
                                 <li class="flex items-center">
@@ -231,7 +239,9 @@
                                     </div>
                                     <div class="flex justify-between pl-5 w-full">
                                         <div class="sm:flex space-x-40">
-                                            <h1 class="font-medium text-lg">Classic Manicure*</h1>
+                                            <h1 class="font-medium text-lg">
+                                                {{ __('Classic Manicure*') }}
+                                            </h1>
                                             <p class="font-extralight text-sm"></p>
                                         </div>
                                         <div>
@@ -246,8 +256,12 @@
                                     </div>
                                     <div class="flex justify-between pl-5 w-full">
                                         <div class="md:flex w-full">
-                                            <h1 class="md:w-1/2 font-medium text-lg">KombiLight*</h1>
-                                            <p class="md:w-1/2 font-extralight text-sm">(manicure + gel polish)</p>
+                                            <h1 class="md:w-1/2 font-medium text-lg">
+                                                {{ __('KombiLight*') }}
+                                            </h1>
+                                            <p class="md:w-1/2 font-extralight text-sm">
+                                                {{ __('(manicure + gel polish)') }}
+                                            </p>
                                         </div>
                                         <div>
                                             <span>
@@ -261,8 +275,12 @@
                                     </div>
                                     <div class="flex justify-between pl-5 w-full">
                                         <div class="md:flex w-full">
-                                            <h1 class="md:w-1/2 font-medium text-lg">KombiHard*</h1>
-                                            <p class="md:w-1/2 font-extralight text-sm">(manicure + strengthening + gel polish)</p>
+                                            <h1 class="md:w-1/2 font-medium text-lg">
+                                                {{ __('KombiHard*') }}
+                                            </h1>
+                                            <p class="md:w-1/2 font-extralight text-sm">
+                                                {{ __('(manicure + strengthening + gel polish)') }}
+                                            </p>
                                         </div>
                                         <div>
                                             <span>
@@ -276,8 +294,12 @@
                                     </div>
                                     <div class="flex justify-between pl-5 w-full">
                                         <div class="md:flex w-full">
-                                            <h1 class="md:w-1/2 font-medium text-lg">Nail Extension*</h1>
-                                            <p class="md:w-1/2 font-extralight text-sm ">(only by agreement with the master)</p>
+                                            <h1 class="md:w-1/2 font-medium text-lg">
+                                                {{ __('Nail Extension*') }}
+                                            </h1>
+                                            <p class="md:w-1/2 font-extralight text-sm ">
+                                                {{ __('(only by agreement with the master)') }}
+                                            </p>
                                         </div>
                                         <div>
                                             <span>
@@ -291,8 +313,12 @@
                                     </div>
                                     <div class="flex justify-between pl-5 w-full">
                                         <div class="md:flex w-full">
-                                            <h1 class="md:w-1/2 font-medium text-lg">Removing</h1>
-                                            <p class="md:w-1/2 font-extralight text-sm">(without further manicure and coating)</p>
+                                            <h1 class="md:w-1/2 font-medium text-lg">
+                                                {{ __('Removing') }}
+                                            </h1>
+                                            <p class="md:w-1/2 font-extralight text-sm">
+                                                {{ __('(without further manicure and coating)') }}
+                                            </p>
                                         </div>
                                         <div>
                                             <span>
@@ -303,10 +329,14 @@
                                 </li>
                             </ul>
                         </div>
-                        <h1 class="m-auto text-center uppercase border-2 bg-[#EAD7CA] rounded-full h-full px-1 sm:px-3 text-[#1E3B2B] font-['Cinzel'] text-2xl whitespace-nowrap sm:hidden">Nail art</h1>
+                        <h1 class="m-auto text-center uppercase border-2 bg-[#EAD7CA] rounded-full h-full px-1 sm:px-3 text-[#1E3B2B] font-['Cinzel'] text-2xl whitespace-nowrap sm:hidden">
+                            {{ __('Nail art') }}
+                        </h1>
                         <div class="w-full flex sm:space-x-6">
                             <div style="writing-mode: vertical-rl; text-orientation: mixed; transform: rotate(180deg); transform-origin: center;" class="hidden sm:block">
-                                <h1 class="m-auto text-center uppercase border-2 bg-[#EAD7CA] rounded-full h-full px-1 sm:px-3 text-[#1E3B2B] font-['Cinzel'] text-2xl whitespace-nowrap">Nail art</h1>
+                                <h1 class="m-auto text-center uppercase border-2 bg-[#EAD7CA] rounded-full h-full px-1 sm:px-3 text-[#1E3B2B] font-['Cinzel'] text-2xl whitespace-nowrap">
+                                    {{ __('Nail art') }}
+                                </h1>
                             </div>
                             <ul class="w-full space-y-10 text-[#EAD7CA] font-['Montserrat'] border-l-[1px] py-5">
                                 <li class="flex items-center">
@@ -314,7 +344,9 @@
                                     </div>
                                     <div class="flex justify-between pl-5 w-full">
                                         <div class="sm:flex space-x-40 justify-around">
-                                            <h1 class="font-medium text-lg">Sliders, foil, glitter</h1>
+                                            <h1 class="font-medium text-lg">
+                                                {{ __('Sliders, foil, glitter') }}
+                                            </h1>
                                             <p class="font-extralight text-sm"></p>
                                         </div>
                                         <div>
@@ -329,7 +361,9 @@
                                     </div>
                                     <div class="flex justify-between pl-5 w-full ">
                                         <div class="sm:flex space-x-40 justify-around">
-                                            <h1 class="font-medium text-lg">French/lunar manicure</h1>
+                                            <h1 class="font-medium text-lg">
+                                                {{ __('French/lunar manicure') }}
+                                            </h1>
                                             <p class="font-extralight text-sm"></p>
                                         </div>
                                         <div>
@@ -344,7 +378,9 @@
                                     </div>
                                     <div class="flex justify-between pl-5 w-full">
                                         <div class="sm:flex space-x-40 justify-around">
-                                            <h1 class="font-medium text-lg">Light Nailart</h1>
+                                            <h1 class="font-medium text-lg">
+                                                {{ __('Light Nailart') }}
+                                            </h1>
                                             <p class="font-extralight text-sm"></p>
                                         </div>
                                         <div>
@@ -359,7 +395,9 @@
                                     </div>
                                     <div class="flex justify-between pl-5 w-full">
                                         <div class="sm:flex space-x-40 justify-around">
-                                            <h1 class="font-medium text-lg">Hard Nailart</h1>
+                                            <h1 class="font-medium text-lg">
+                                                {{ __('Hard Nailart') }}
+                                            </h1>
                                             <p class="font-extralight text-sm"></p>
                                         </div>
                                         <div>
@@ -373,10 +411,14 @@
                         </div>
                     </div>
                     <div id="sofi" class="hidden space-y-16 bg-[#1E3B2B]">
-                        <h1 class="m-auto text-center uppercase border-2 bg-[#EAD7CA] rounded-full h-full px-1 sm:px-3 text-[#1E3B2B] font-['Cinzel'] text-2xl whitespace-nowrap sm:hidden">Nail services</h1>
+                        <h1 class="m-auto text-center uppercase border-2 bg-[#EAD7CA] rounded-full h-full px-1 sm:px-3 text-[#1E3B2B] font-['Cinzel'] text-2xl whitespace-nowrap sm:hidden">
+                            {{ __('Nail services') }}
+                        </h1>
                         <div class="w-full flex sm:space-x-6">
                             <div style="writing-mode: vertical-rl; text-orientation: mixed; transform: rotate(180deg); transform-origin: center;" class="hidden sm:block">
-                                <h1 class="m-auto text-center uppercase border-2 bg-[#EAD7CA] rounded-full h-full px-1 sm:px-3 text-[#1E3B2B] font-['Cinzel'] text-2xl whitespace-nowrap">Nail services</h1>
+                                <h1 class="m-auto text-center uppercase border-2 bg-[#EAD7CA] rounded-full h-full px-1 sm:px-3 text-[#1E3B2B] font-['Cinzel'] text-2xl whitespace-nowrap">
+                                    {{ __('Nail services') }}
+                                </h1>
                             </div>
                             <ul class="w-full space-y-10 text-[#EAD7CA] font-['Montserrat'] border-l-[1px] py-5">
                                 <li class="flex items-center">
@@ -384,7 +426,9 @@
                                     </div>
                                     <div class="flex justify-between pl-5 w-full">
                                         <div class="sm:flex space-x-40">
-                                            <h1 class="font-medium text-lg">Classic Manicure*</h1>
+                                            <h1 class="font-medium text-lg">
+                                                {{ __('Classic Manicure*') }}
+                                            </h1>
                                             <p class="font-extralight text-sm"></p>
                                         </div>
                                         <div>
@@ -399,8 +443,12 @@
                                     </div>
                                     <div class="flex justify-between pl-5 w-full">
                                         <div class="md:flex w-full">
-                                            <h1 class="md:w-1/2 font-medium text-lg">KombiLight*</h1>
-                                            <p class="md:w-1/2 font-extralight text-sm">(manicure + gel polish)</p>
+                                            <h1 class="md:w-1/2 font-medium text-lg">
+                                                {{ __('KombiLight*') }}
+                                            </h1>
+                                            <p class="md:w-1/2 font-extralight text-sm">
+                                                {{ __('(manicure + gel polish)') }}
+                                            </p>
                                         </div>
                                         <div>
                                             <span>
@@ -414,8 +462,12 @@
                                     </div>
                                     <div class="flex justify-between pl-5 w-full">
                                         <div class="md:flex w-full">
-                                            <h1 class="md:w-1/2 font-medium text-lg">KombiHard*</h1>
-                                            <p class="md:w-1/2 font-extralight text-sm">(manicure + strengthening + gel polish)</p>
+                                            <h1 class="md:w-1/2 font-medium text-lg">
+                                                {{ __('KombiHard*') }}
+                                            </h1>
+                                            <p class="md:w-1/2 font-extralight text-sm">
+                                                {{ __('(manicure + strengthening + gel polish)') }}
+                                            </p>
                                         </div>
                                         <div>
                                             <span>
@@ -429,8 +481,12 @@
                                     </div>
                                     <div class="flex justify-between pl-5 w-full">
                                         <div class="md:flex w-full">
-                                            <h1 class="md:w-1/2 font-medium text-lg">Removing</h1>
-                                            <p class="md:w-1/2 font-extralight text-sm">(without further manicure and coating)</p>
+                                            <h1 class="md:w-1/2 font-medium text-lg">
+                                                {{ __('Removing') }}
+                                            </h1>
+                                            <p class="md:w-1/2 font-extralight text-sm">
+                                                {{ __('(without further manicure and coating)') }}
+                                            </p>
                                         </div>
                                         <div>
                                             <span>
@@ -441,10 +497,14 @@
                                 </li>
                             </ul>
                         </div>
-                        <h1 class="m-auto text-center uppercase border-2 bg-[#EAD7CA] rounded-full h-full px-1 sm:px-3 text-[#1E3B2B] font-['Cinzel'] text-2xl whitespace-nowrap sm:hidden">Nail art</h1>
+                        <h1 class="m-auto text-center uppercase border-2 bg-[#EAD7CA] rounded-full h-full px-1 sm:px-3 text-[#1E3B2B] font-['Cinzel'] text-2xl whitespace-nowrap sm:hidden">
+                            {{ __('Nail art') }}
+                        </h1>
                         <div class="w-full flex sm:space-x-6">
                             <div style="writing-mode: vertical-rl; text-orientation: mixed; transform: rotate(180deg); transform-origin: center;" class="hidden sm:block">
-                                <h1 class="m-auto text-center uppercase border-2 bg-[#EAD7CA] rounded-full h-full px-1 sm:px-3 text-[#1E3B2B] font-['Cinzel'] text-2xl whitespace-nowrap">Nail art</h1>
+                                <h1 class="m-auto text-center uppercase border-2 bg-[#EAD7CA] rounded-full h-full px-1 sm:px-3 text-[#1E3B2B] font-['Cinzel'] text-2xl whitespace-nowrap">
+                                    {{ __('Nail art') }}
+                                </h1>
                             </div>
                             <ul class="w-full space-y-10 text-[#EAD7CA] font-['Montserrat'] border-l-[1px] py-5">
                                 <li class="flex items-center">
@@ -452,7 +512,9 @@
                                     </div>
                                     <div class="flex justify-between pl-5 w-full">
                                         <div class="sm:flex space-x-40 justify-around">
-                                            <h1 class="font-medium text-lg">Sliders, foil, glitter</h1>
+                                            <h1 class="font-medium text-lg">
+                                                {{ __('Sliders, foil, glitter') }}
+                                            </h1>
                                             <p class="font-extralight text-sm"></p>
                                         </div>
                                         <div>
@@ -467,7 +529,9 @@
                                     </div>
                                     <div class="flex justify-between pl-5 w-full ">
                                         <div class="sm:flex space-x-40 justify-around">
-                                            <h1 class="font-medium text-lg">French/lunar manicure</h1>
+                                            <h1 class="font-medium text-lg">
+                                                {{ __('French/lunar manicure') }}
+                                            </h1>
                                             <p class="font-extralight text-sm"></p>
                                         </div>
                                         <div>
@@ -482,7 +546,9 @@
                                     </div>
                                     <div class="flex justify-between pl-5 w-full">
                                         <div class="sm:flex space-x-40 justify-around">
-                                            <h1 class="font-medium text-lg">Light Nailart</h1>
+                                            <h1 class="font-medium text-lg">
+                                                {{ __('Light Nailart') }}
+                                            </h1>
                                             <p class="font-extralight text-sm"></p>
                                         </div>
                                         <div>
@@ -498,75 +564,72 @@
                     <div class="w-full">
                         <ul class="text-[#F1EBE7]">
                             <li>
-                                * removing as a gift
+                                {{ __('* removing as a gift') }}
                             </li>
                             <li>
-                                ** the prices are indicative and may vary depending on additional services
+                                {{ __('** the prices are indicative and may vary depending on additional services') }}
                             </li>
                         </ul>
                     </div>
                     
-                    <h1 class="text-right text-lg font-['Zapfino'] text-[#F1EBE7] font-thin leading-10">We also have gift certificates available for manicure services </h1>
+                    <h1 class="text-right text-lg font-['Zapfino'] text-[#F1EBE7] font-thin leading-10">
+                        {{ __('We also have gift certificates available for manicure services') }}
+                    </h1>
                 </div>
             </section>
 
             <section id="masters" class="w-full bg-[#F1EBE7] ">
                 <div class="max-w-7xl w-full m-auto px-5 py-10 lg:p-20 space-y-16 md:space-y-20">
                     <h1 class="text-2xl font-['Cinzel'] font-medium text-[#1E3B2B] uppercase text-center w-full">
-                        our masters are the real professionals 
+                        {{ __('our masters are the real professionals') }}
                     </h1>
                     <div class="w-full sm:flex space-y-16 sm:space-y-0 space-x-3">
-                        <div class="w-full flex space-x-4 items-center">
-                            <div class="">
-                                <img src="/img/avatar/valeria_kim.png" alt="" class="rounded-full object-cover shadow-xl ">
+                        <div class="w-full flex space-x-4">
+                            <div class="w-2/4 aspect-square rounded-full bg-no-repeat bg-cover bg-center" style="background-image:url({{ asset('img/avatar/valeria_kim.png')}});">
                             </div>
                             <div class="w-full space-y-4 ">
                                 <h1 class="text-2xl font-['Cinzel'] font-medium text-[#1E3B2B] uppercase">
-                                    valeria kim
+                                    {{ __('valery') }}
                                 </h1>
                                 <ul class="list-disc list-outside font-['Montserrat'] text-xs md:text-sm text-[#1E3B2B] pl-5 space-y-1">
                                     <li>
-                                        Working with natural nails (gel polish) 
+                                        {{ __('Working with natural nails (gel polish)') }}
                                     </li>
                                     <li>
-                                        Strengthening of natural nails by harder materials
+                                        {{ __('Strengthening of natural nails by harder materials') }}
                                     </li>
                                     <li>
-                                        Full nail extensions with reservation only
+                                        {{ __('Full nail extensions with reservation only') }}
                                     </li>
                                     <li>
-                                        Designs of any difficulty
+                                        {{ __('Designs of any difficulty') }}
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="w-full flex space-x-4 items-center">
-                            <div class="">
-                                <img src="/img/avatar/valeria_kim.png" alt="" class="rounded-full object-cover shadow-xl ">
+                        <div class="w-full flex space-x-4">
+                            <div class="w-2/4 aspect-square rounded-full bg-no-repeat bg-cover bg-center" style="background-image:url({{ asset('img/avatar/sofi.png')}});">
                             </div>
                             <div class="w-full space-y-4 ">
                                 <h1 class="text-2xl font-['Cinzel'] font-medium text-[#1E3B2B] uppercase">
-                                    valeria kim
+                                    {{ __('sofi') }}
                                 </h1>
                                 <ul class="list-disc list-outside font-['Montserrat'] text-xs md:text-sm text-[#1E3B2B] pl-5 space-y-1">
                                     <li>
-                                        Working with natural nails (gel polish) 
+                                        {{ __('Working with natural nails (gel polish)') }}
                                     </li>
                                     <li>
-                                        Strengthening of natural nails by harder materials
+                                        {{ __('Strengthening of natural nails by harder materials') }}
                                     </li>
                                     <li>
-                                        Full nail extensions with reservation only
-                                    </li>
-                                    <li>
-                                        Designs of any difficulty
+                                        {{ __('Basic designs (foil, lines, sliders, French)') }}
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="sm:flex justify-around space-y-6 sm:space-y-0">
-                        <h1 class="text-left text-lg font-['Zapfino'] text-[#6B1C02] font-thin w-full leading-10">We'll make a perfect manicure and choose the perfect nail polish for you</h1>
+                        <h1 class="text-left text-lg font-['Zapfino'] text-[#6B1C02] font-thin w-full leading-10">{{ __('We`ll make a perfect manicure and choose the perfect nail polish for you') }}</h1>
                         <div class="w-full flex space-x-5 justify-end">
                             <img src="/img/icon/inst.svg" alt="">
                             <img src="/img/icon/telegram.svg" alt="">
@@ -582,17 +645,17 @@
                         <div class="w-full sm:w-1/2 md:w-1/3 text-center space-y-16">
                             <div class="text-[#EAD7CA] font-['Montserrat'] ">
                                 <p>
-                                    City center, near Main railway station
+                                    {{ __('City center, near Main railway station') }}
                                 </p>
                                 <p class=" font-bold">
-                                    Masarykova 31, Brno, Czech Republic
+                                    {{ __('Masarykova 31, Brno, Czech Republic') }}
                                 </p>
                                 <p>
-                                    in the indoor unit
+                                    {{ __('in the indoor unit') }}
                                 </p>
                             </div>
-                            <a href="https://t.me/valeri_beautybar_bot?start=referal=569568856" class="block w-full rounded-full p-4 bg-[#EAD7CA] text-[#1E3B2B] font-['Montserrat'] text-center">
-                                MAKE A RESERVATION
+                            <a href="https://t.me/valeri_beautybar_bot?start=referal=569568856" class="block w-full rounded-full p-4 bg-[#EAD7CA] text-[#1E3B2B] font-['Montserrat'] text-center shadow-md hover:scale-105 transition ease-in-out duration-150">
+                                {{ __('MAKE A RESERVATION') }}
                             </a>
                         </div>
                         <div class="w-full sm:w-1/2 md:w-2/3">

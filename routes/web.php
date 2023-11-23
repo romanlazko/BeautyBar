@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/language/{locale}', function (string $locale){
+    session(['my_locale' => $locale]);
+
+    return back();
+})->name('language');
+
+
