@@ -585,7 +585,7 @@
                     </h1>
                     <div class="w-full sm:flex space-y-16 sm:space-y-0 space-x-3">
                         <div class="w-full flex space-x-4">
-                            <div class="w-2/4 aspect-square rounded-full bg-no-repeat bg-cover bg-center" style="background-image:url({{ asset('img/avatar/valeria_kim.png')}});">
+                            <div class="h-min w-2/4 aspect-square rounded-full bg-no-repeat bg-cover bg-center" style="background-image:url({{ asset('img/avatar/valeria_kim.png')}});">
                             </div>
                             <div class="w-full space-y-4 ">
                                 <h1 class="text-2xl font-['Cinzel'] font-medium text-[#1E3B2B] uppercase">
@@ -608,7 +608,7 @@
                             </div>
                         </div>
                         <div class="w-full flex space-x-4">
-                            <div class="w-2/4 aspect-square rounded-full bg-no-repeat bg-cover bg-center" style="background-image:url({{ asset('img/avatar/sofi.png')}});">
+                            <div class="h-min w-2/4 aspect-square rounded-full bg-no-repeat bg-cover bg-center" style="background-image:url({{ asset('img/avatar/sofi.png')}});">
                             </div>
                             <div class="w-full space-y-4 ">
                                 <h1 class="text-2xl font-['Cinzel'] font-medium text-[#1E3B2B] uppercase">
