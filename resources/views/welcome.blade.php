@@ -96,7 +96,9 @@
                 <div class="max-w-7xl flex w-full m-auto p-10 lg:p-20 space-x-16 items-center">
                     <div class="sm:w-3/5">
                         <div class="grid h-full content-between text-center py-12 space-y-16">
-                        <h1 class="text-2xl font-['Cinzel'] font-medium text-[#1E3B2B] uppercase">{{ __('we are happy to see you in') }} <br> valeri beauty bar</h1>
+                            <h1 class="text-2xl font-['Cinzel'] font-medium text-[#1E3B2B] uppercase">
+                                {{ __('we are happy to see you in') }} <br> valeri beauty bar
+                            </h1>
                             <div class="space-y-6 font-['Montserrat'] text-base text-[#1E3B2B]">
                                 <p>
                                     {{ __('Our mission is to inspire and to show you, that manicure is not only a beauty procedure,  but an expression of self-care.') }}
@@ -108,7 +110,7 @@
                                     {{ __('Just relax, enjoy and take your time.') }}
                                 </p>
                             </div>
-                            <h1 class="text-right text-md sm:text-lg font-['Zapfino'] text-[#6B1C02] font-thin whitespace-nowrap">{{ __('Sincerelly yours Valeri Beuty Bar') }}</h1>
+                            <h1 class="text-right text-md sm:text-lg font-['Zapfino'] text-[#6B1C02] font-thin whitespace-nowrap">{{ __('Sincerelly yours Valeri Beauty Bar') }}</h1>
                         </div>
                     </div>
                     <div class="w-2/5 hidden sm:block">
