@@ -25,7 +25,7 @@
                             <div x-cloak x-show="menu" class="w-[200px] absolute left-0 z-10 mt-2 bg-[#1E3B2B] rounded-md shadow-xl border border-[#EAD7CA] overflow-auto uppercase" id="menu">
                                 <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#main">{{ __('main') }}</a>
                                 <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#about">{{ __('about us') }}</a>
-                                <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#perks">{{ __('our perks') }}</a>
+                                <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#perks">{{ __('our privileges') }}</a>
                                 <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#sterilization">{{ __('sterilization') }}</a>
                                 <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#price">{{ __('price') }}</a>
                                 <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#masters">{{ __('our masters') }}</a>
@@ -110,7 +110,7 @@
                                     {{ __('Just relax, enjoy and take your time.') }}
                                 </p>
                             </div>
-                            <h1 class="text-right text-md sm:text-lg font-['Zapfino'] text-[#6B1C02] font-thin whitespace-nowrap">{{ __('Sincerelly yours Valeri Beauty Bar') }}</h1>
+                            <h1 class="text-right text-md sm:text-lg font-['Zapfino'] text-[#6B1C02] font-thin whitespace-nowrap">{{ __('Sincerelly yours, Valeri Beauty Bar') }}</h1>
                         </div>
                     </div>
                     <div class="w-2/5 hidden sm:block">
@@ -128,10 +128,10 @@
                             </div>
                             <div class="w-full space-y-2">
                                 <h1 class="font-['Cinzel'] font-medium text-md">
-                                    {{ __('PROFESSIONAL MANICURES') }}
+                                    {{ __('PROFESSIONAL MANICURE') }}
                                 </h1>
                                 <p class="text-xs md:text-sm font-['Montserrat'] ">
-                                    {{ __('Our masters bring their expertise and precision to every service, ensuring that you leave our studio with beautiful, well-crafted nails. Your satisfaction is our priority.') }}
+                                    {{ __('Our masters are bringing their expertise and precision to every service, ensuring that you will leave our studio with beautiful nails. Your satisfaction is the number one priority for us.') }}
                                 </p>
                             </div>
                         </div>
@@ -144,7 +144,7 @@
                                     {{ __('COZY ATMOSPHERE') }}
                                 </h1>
                                 <p class="text-xs md:text-sm font-['Montserrat'] ">
-                                    {{ __('Here you`ll find a warm and inviting ambiance. Our friendly staff is dedicated to making you feel comfortable and unique.') }}
+                                    {{ __('Here you`ll find a warm and inviting ambiance the warmth and relaxation. Our friendly staff wishes make you feel comfortable and unique.') }}
                                 </p>
                             </div>
                         </div>
@@ -159,7 +159,7 @@
                                     {{ __('PRIME LOCATION') }}
                                 </h1>
                                 <p class="text-xs md:text-sm font-['Montserrat'] ">
-                                    {{ __('Our studio is situated in the heart of the city, making it more accessible to clients.') }}
+                                    {{ __('Our studio is situated in the heart of the city, making it more accessible for clients.') }}
                                 </p>
                             </div>
                         </div>
