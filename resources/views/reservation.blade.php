@@ -15,11 +15,7 @@
     <body class="w-full h-screen bg-gray-200">
         <div class="h-screen bg-gray-200 font-roboto">
             <main class="bg-gray-200">
-                <div class="mx-auto p-1">
-                    <div class="w-full m-auto max-w-4xl">
-                        <iframe class="w-full h-screen" src="https://webapp.buukan.com/1"></iframe>
-                    </div>
-                </div>
+                <iframe class="w-full h-screen" src="https://webapp.buukan.com/1"></iframe>
             </main>
         </div>
     </body>
