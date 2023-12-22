@@ -10,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     </head>
-    <body class="">
+    <body class="w-full h-screen">
         <iframe class="w-full min-h-[80vh]" src="https://webapp.buukan.com/1"></iframe>
     </body>
 </html>
