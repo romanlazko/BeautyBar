@@ -48,7 +48,7 @@
                     <div class="h-1/2 md:h-full w-full grid p-10 lg:p-20 content-between">
                         <nav class="hidden md:flex w-full m-auto font-['Montserrat'] text-[#EAD7CA] justify-between">
                             <div x-data="{ menu: false }" class="relative">
-                                <button id="menu" href="#" @click="menu = ! menu" @mouseover="menu = ! menu" class="uppercase">{{ __('menu') }}</button>
+                                <button id="menu" href="#" @click="menu = ! menu" class="uppercase">{{ __('menu') }}</button>
                         
                                 <div x-cloak x-show="menu" @click="menu = false" class="fixed inset-0 z-10 w-full h-full"></div>
                             
@@ -63,7 +63,7 @@
                                 </div>
                             </div>
                             <div x-data="{ lang: false }" class="relative">
-                                <button id="lang" href="#" @click="lang = ! lang" @mouseover="lang = ! lang" class="uppercase">{{ session('my_locale', 'cz') ?? config('app.locale') }}</button>
+                                <button id="lang" href="#" @click="lang = ! lang" class="uppercase">{{ session('my_locale', 'cz') ?? config('app.locale') }}</button>
                             
                                 <div x-cloak x-show="lang" @click="lang = false" class="fixed inset-0 z-10 w-full h-full"></div>
                             
@@ -85,7 +85,7 @@
                             </defs>
                         </svg>
                             
-                        <a href="https://t.me/valeri_beautybar_bot?start=referal=569568856" target="_blank" class="block w-full rounded-full p-4 bg-[#EAD7CA] text-[#1E3B2B] font-['Montserrat'] text-center shadow-md hover:scale-105 transition ease-in-out duration-150 uppercase">
+                        <a href="{{ route('reservation') }}" target="_blank" class="block w-full rounded-full p-4 bg-[#EAD7CA] text-[#1E3B2B] font-['Montserrat'] text-center shadow-md hover:scale-105 transition ease-in-out duration-150 uppercase">
                             {{ __('make a reservation') }}
                         </a>
                     </div>
@@ -670,7 +670,7 @@
                                     {{ __('in the indoor unit') }}
                                 </p>
                             </div>
-                            <a href="https://t.me/valeri_beautybar_bot?start=referal=569568856" target="_blank" class="block w-full rounded-full p-4 bg-[#EAD7CA] text-[#1E3B2B] font-['Montserrat'] text-center shadow-md hover:scale-105 transition ease-in-out duration-150 uppercase">
+                            <a href="{{ route('reservation') }}" target="_blank" class="block w-full rounded-full p-4 bg-[#EAD7CA] text-[#1E3B2B] font-['Montserrat'] text-center shadow-md hover:scale-105 transition ease-in-out duration-150 uppercase">
                                 {{ __('make a reservation') }}
                             </a>
                         </div>

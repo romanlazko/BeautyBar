@@ -1,0 +1,1 @@
+<iframe class="w-full min-h-[80vh]" src="https://webapp.buukan.com/1"></iframe>

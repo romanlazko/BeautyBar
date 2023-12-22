@@ -23,4 +23,8 @@ Route::get('/language/{locale}', function (string $locale){
     return back();
 })->name('language');
 
+Route::get('reservation', function () {
+    return view('reservation');
+})->name('reservation');
+
 
