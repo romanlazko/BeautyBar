@@ -13,10 +13,10 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="w-full h-screen bg-gray-200">
-        <div class="flex h-screen bg-gray-200 font-roboto">
+        <div class="h-screen bg-gray-200 font-roboto">
             <main class="bg-gray-200">
                 <div class="mx-auto p-1">
-                    <div class="w-full space-y-6 m-auto max-w-4xl">
+                    <div class="w-full m-auto max-w-4xl">
                         <iframe class="w-full h-screen" src="https://webapp.buukan.com/1"></iframe>
                     </div>
                 </div>
