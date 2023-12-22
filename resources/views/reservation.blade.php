@@ -15,7 +15,7 @@
     <body class="w-full h-screen bg-gray-200">
         <div class="h-screen bg-gray-200 font-roboto">
             <main class="bg-gray-200">
-                <iframe class="w-full h-screen" sandbox="allow-same-origin allow-scripts allow-forms" src="https://webapp.buukan.com/1"></iframe>
+                <iframe class="w-full h-screen" sandbox="allow-same-origin allow-scripts allow-forms" src="https://webapp.buukan.com/1/login"></iframe>
             </main>
         </div>
     </body>
