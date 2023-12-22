@@ -85,7 +85,7 @@
                             </defs>
                         </svg>
                             
-                        <a href="{{ route('reservation') }}" target="_blank" class="block w-full rounded-full p-4 bg-[#EAD7CA] text-[#1E3B2B] font-['Montserrat'] text-center shadow-md hover:scale-105 transition ease-in-out duration-150 uppercase">
+                        <a href="https://webapp.buukan.com/1/login" target="_blank" class="block w-full rounded-full p-4 bg-[#EAD7CA] text-[#1E3B2B] font-['Montserrat'] text-center shadow-md hover:scale-105 transition ease-in-out duration-150 uppercase">
                             {{ __('make a reservation') }}
                         </a>
                     </div>
@@ -670,7 +670,7 @@
                                     {{ __('in the indoor unit') }}
                                 </p>
                             </div>
-                            <a href="{{ route('reservation') }}" target="_blank" class="block w-full rounded-full p-4 bg-[#EAD7CA] text-[#1E3B2B] font-['Montserrat'] text-center shadow-md hover:scale-105 transition ease-in-out duration-150 uppercase">
+                            <a href="https://webapp.buukan.com/1/login" target="_blank" class="block w-full rounded-full p-4 bg-[#EAD7CA] text-[#1E3B2B] font-['Montserrat'] text-center shadow-md hover:scale-105 transition ease-in-out duration-150 uppercase">
                                 {{ __('make a reservation') }}
                             </a>
                         </div>
