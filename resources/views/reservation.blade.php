@@ -12,20 +12,15 @@
 
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="w-full h-screen">
+    <body class="bg-gray-200">
         <div class="flex h-screen bg-gray-200 font-roboto">
-            
-            <div class="flex-1 flex flex-col overflow-hidden">
-                
-                <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-200">
-                    <div class="mx-auto p-1">
-                        <div class="w-full space-y-6 m-auto max-w-4xl">
-                            <iframe class="w-full min-h-[80vh]" src="https://webapp.buukan.com/1"></iframe>
-                        </div>
+            <main class="bg-gray-200">
+                <div class="mx-auto p-1">
+                    <div class="w-full space-y-6 m-auto max-w-4xl">
+                        <iframe class="w-full h-screen" src="https://webapp.buukan.com/1"></iframe>
                     </div>
-                </main>
-            </div>
+                </div>
+            </main>
         </div>
-        
     </body>
 </html>
