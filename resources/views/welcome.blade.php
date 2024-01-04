@@ -602,7 +602,7 @@
                             </div>
                             <div class="w-full space-y-4 ">
                                 <h1 class="text-2xl font-['Cinzel'] font-medium text-[#1E3B2B] uppercase">
-                                    {{ __('valery') }}
+                                    {{ __('valeri') }}
                                 </h1>
                                 <ul class="list-disc list-outside font-['Montserrat'] text-xs md:text-sm text-[#1E3B2B] pl-5 space-y-1">
                                     <li>
