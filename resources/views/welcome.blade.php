@@ -22,7 +22,7 @@
                         
                             <div x-cloak x-show="menu" @click="menu = false" class="fixed inset-0 z-10 w-full h-full"></div>
                         
-                            <div x-cloak x-show="menu" class="w-[200px] absolute left-0 z-10 mt-2 bg-[#1E3B2B] rounded-md shadow-xl border border-[#EAD7CA] overflow-auto uppercase" id="menu">
+                            <div x-cloak x-show="menu" class="w-[200px] absolute left-0 z-10 mt-2 bg-[#1E3B2B] rounded-md shadow-xl border border-[#EAD7CA] overflow-auto uppercase hidden" id="menu">
                                 <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#main">{{ __('main') }}</a>
                                 <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#about">{{ __('about us') }}</a>
                                 <a class="block w-full p-2 hover:bg-[#EAD7CA] hover:text-[#1E3B2B]" href="#perks">{{ __('our privileges') }}</a>
